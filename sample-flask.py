@@ -7,4 +7,8 @@ app = Flask(__name__)
 def index():
     return json.dumps({'name': 'alice',
                        'email': 'alice@outlook.com'})
+
+@app.route('/hello')
+def hello():
+    return "Hello !!"
 app.run()
